@@ -416,3 +416,41 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Windows thumbnail cache
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# dotnet tools / local tool manifests
+.dotnet/
+.config/dotnet-tools.json
+
+# NuGet local feeds and temp
+*.nupkg.metadata
+*.nupkg.sha512
+
+# dotnet publish output
+publish/
+**/publish/
+
+# Secrets / environment overrides
+appsettings.*.json
+!appsettings.Development.json
+secrets.json
+.secrets

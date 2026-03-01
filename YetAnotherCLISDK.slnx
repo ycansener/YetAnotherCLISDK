@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="YetAnotherCLISDK/YetAnotherCLISDK.csproj" />
+  <Project Path="YetAnotherCLISDK.Demo/YetAnotherCLISDK.Demo.csproj" />
+</Solution>
