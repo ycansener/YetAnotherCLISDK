@@ -4,6 +4,49 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- Package identity -->
+    <PackageId>YetAnotherCLISDK</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Yigitcan Sener</Authors>
+    <Product>Yet Another CLI SDK</Product>
+
+    <!-- Package description -->
+    <Description>A .NET SDK for building beautiful, colourful command-line interfaces. Supports rich text markup, borders, tables, lists, progress bars, spinners, interactive menus, bar charts, and tree views.</Description>
+    <Summary>Colourful CLI components for .NET — panels, tables, lists, progress bars, spinners, selection menus, and more.</Summary>
+    <Tags>cli console terminal ansi color markup table progress spinner menu</Tags>
+
+    <!-- URLs -->
+    <PackageProjectUrl>https://github.com/ycansener/YetAnotherCLISDK</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ycansener/YetAnotherCLISDK</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- License -->
+    <PackageLicense>MIT</PackageLicense>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- README and icon shown on nuget.org -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <!-- <PackageIcon>icon.png</PackageIcon> -->
+
+    <!-- Release notes -->
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+
+    <!-- Embed source into the .pdb for debugging support -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Deterministic builds (recommended for public packages) -->
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
+
+  <!-- Bundle the README into the package -->
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <!-- Uncomment when you have an icon: -->
+    <!-- <None Include="..\icon.png" Pack="true" PackagePath="\" /> -->
+  </ItemGroup>
 
 </Project>
