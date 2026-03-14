@@ -7,7 +7,7 @@
 
     <!-- Package identity -->
     <PackageId>YetAnotherCLISDK</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.4</Version>
     <Authors>Yigitcan Sener</Authors>
     <Product>Yet Another CLI SDK</Product>
 
