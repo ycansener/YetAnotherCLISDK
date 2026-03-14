@@ -225,3 +225,16 @@ Cli.WriteLine();
 Cli.Render(new Rule().WithStyle(new Style { Foreground = Color.Gray }));
 Cli.WriteLine("[bold cyan]  Thanks for using YetAnotherCLISDK![/]  [gray]Happy coding 🚀[/]");
 Cli.WriteLine();
+
+// ── Centered Layout ──────────────────────────────────────────────────────────
+Console.ReadKey(intercept: true); // press any key to see centered layout demo
+Cli.Render(new CenteredLayout(
+    new Panel(
+        "[bold]Name:[/]    ________________________\n" +
+        "[bold]Email:[/]   ________________________\n" +
+        "[bold]Password:[/] _______________________")
+    .WithTitle("[bold cyan]  Login  [/]")
+    .WithBorder(BorderStyle.Rounded)
+    .WithBorderStyle(new Style { Foreground = Color.Cyan })
+    .WithPadding(2, 1))
+.WithClearScreen());
